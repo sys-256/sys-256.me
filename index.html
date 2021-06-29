@@ -10,36 +10,56 @@
             background-color: hsl(49, 63%, 54%);
         }
 
-        .text-center {
+        .text {
             position: absolute;
-            top: 40%;
-            left: 50%;
+            top: 45%;
+            left: 30%;
             transform: translate(-50%, -50%);
             
             text-align: center;
         }
 
+        .contact {
+            position: absolute;
+            top: 45%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+
+            text-align: center;
+        }
+
         ::selection {
-            background: white;
+            background: hsl(200, 45%, 70%);
             color: black;
         }
 
         a:link, a:visited {
             color: black;
-            text-decoration: underline;
+            text-decoration: none;
         }
 
         a:hover, a:active {
-            color: rgb(69, 119, 50);
+            color: hsl(200, 45%, 50%);
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="text-center">
+    <div class="text">
         <h1>Hi there, welcome to my website!</h1>
         <br>
-        <h3><a href="https://github.com/Hoiboy19/">You can view my github page here.</a></h3>
+        <h3>
+            Hello! I am Bram, online known as Hoiboy19.<br> I'd like to code in JavaScript or Python, or a bit of C++.
+            <br><br>
+            If you want to contact me, please click one of the links next to this.
+        </h3>
+    </div>
+    <div class="contact">
+        <a href="https://github.com/Hoiboy19/">Github: Hoiboy19</a>
+        <br><br>
+        <a href="https://discord.com/users/832540286923177994/">Discord: Hoiboy19#0920</a>
+        <br><br>
+        <a href="https://steamcommunity.com/id/Hoiboy19/">Steam: Hoiboy19</a>
     </div>
 </body>
 </html>
