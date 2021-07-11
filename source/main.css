@@ -1,3 +1,6 @@
+/*import JetBrains Mono font*/
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -7,7 +10,8 @@ body {
     background-size: 1000% 1000%;
     animation: background-gradient 10s ease infinite;
     text-align: center;
-    font-family: monospace;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: small;
 }
 
 /*hi there*/
