@@ -93,6 +93,16 @@
         {
             location.replace("https://sys-256.ga/");
         }
+        
+        let notVisited = true;
+        async function reportView()
+        {
+            if (notVisited)
+            {
+                notVisited = false;
+                fetch("https://views.sys-256.ga/");
+            }
+        }
     </script>
 </body>
 </html>
