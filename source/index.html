@@ -72,7 +72,7 @@
         <img src="projects.webp" alt="Projects" class="projects-image-image" width="40%" height="100%">
     </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <div class="contact" id="contact">
+    <div class="contact" id="contact" onmouseover="reportView()">
         <h1 class="contact-contact-text">Contact</h1>
         <a href="//discord.com/users/832540286923177994/" target="_blank" rel="noopener noreferrer"><h2><abbr title="Opens in a new tab." style="text-decoration: none;">Discord: Hoiboy19#0920</abbr></h2></a>
         <a href="//github.com/sys-256/" target="_blank" rel="noopener noreferrer"><h2><abbr title="Opens in a new tab." style="text-decoration: none;">Github: sys-256</abbr></h2></a>
@@ -95,7 +95,7 @@
         }
         
         let notVisited = true;
-        async function reportView()
+        function reportView()
         {
             if (notVisited)
             {
