@@ -107,7 +107,7 @@
             location.replace("https://sys-256.ga/");
         }
         
-        fetch("https://views.sys-256.ga/visit/sys-256")
+        fetch("https://views-backend.sys-256.ga/visit/sys-256")
 
         let notVisited = true;
         function reportVisit()
@@ -115,7 +115,7 @@
             if (notVisited)
             {
                 notVisited = false;
-                fetch("https://views.sys-256.ga/actualVisit/sys-256");
+                fetch("https://views-backend.sys-256.ga/actualVisit/sys-256");
             }
         }
     </script>
