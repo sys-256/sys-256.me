@@ -1,4 +1,4 @@
-/*import JetBrains Mono font*/
+/* Import JetBrains Mono font */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
 html {
@@ -14,7 +14,7 @@ body {
     font-size: small;
 }
 
-/*hi there*/
+/* Hi there */
 .hi-there {
     float: left;
     margin-left: 10%;
@@ -65,7 +65,7 @@ body {
   animation: fadeInUp 2s ease calc(2.4s) forwards;
 }
 
-/*projects*/
+/* Projects */
 .projects {
     display: grid;
     place-content: center;
@@ -86,7 +86,7 @@ body {
     font-size: clamp(1rem, 3vw + 1rem, 3rem);
 }
 
-/*project image*/
+/* Project image */
 .projects-image {
     display: flex;
     justify-content: center;
@@ -103,7 +103,7 @@ body {
     align-self: center;
 }
 
-/*contact*/
+/* Contact */
 .contact {
     display: grid;
     place-content: center;
@@ -124,7 +124,7 @@ body {
     font-size: clamp(1rem, 3vw + 1rem, 3rem);
 }
 
-/*contact image*/
+/* Contact image */
 .contact-image {
     display: flex;
     justify-content: center;
@@ -141,7 +141,7 @@ body {
     align-self: center;
 }
 
-/*footer*/
+/* Footer */
 .footer {
     display: grid;
     width: 75%;
@@ -151,7 +151,7 @@ body {
     color: white;
 }
 
-/*link customization*/
+/* Link customization */
 a:link, a:visited {
     color: black;
     text-decoration: none;
@@ -162,18 +162,18 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
-/*selection customization*/
+/* Selection customization */
 ::selection {
     color: black;
     background-color: white;
 }
 
-/*removes the scroll bar*/
+/* Removes the scroll bar */
 ::-webkit-scrollbar {
     width: 0px;
 }
 
-/*scroll animation*/
+/* Scroll animation */
 .scroll-down {
     height: 50px;
     width: 30px;
@@ -203,7 +203,7 @@ a:hover, a:active {
     animation-delay: .35s;
 }
 
-/*animations*/
+/* Animations */
 @keyframes background-gradient {
     0% {
         background-position: 0% 50%;
