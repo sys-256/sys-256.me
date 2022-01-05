@@ -1,2 +1,5 @@
 # sys-256.ga
-You can find the source code of my website here. It's hosted on my Raspberry Pi, the domain is provided by [Freenom](https://freenom.com) and the https certificate + DNS records management are from [Cloudflare](https://cloudflare.com).
+You can find the source code of my website here. It's hosted on my Raspberry Pi 4B, the domain is provided by [Freenom](https://freenom.com) and the https certificate + DNS record management is by [Cloudflare](https://cloudflare.com).
+
+## License
+Check [the license file](LICENSE)
