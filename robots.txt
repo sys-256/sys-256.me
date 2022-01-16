@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sys-256.ga/sitemap.xml
+Sitemap: https://sys-256.me/sitemap.xml
