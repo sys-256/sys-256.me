@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="256x256" href="/favicon.png">
@@ -28,7 +29,7 @@
     <meta property="og:site_name" content="sys-256.me">
 </head>
 
-<body id="hi-there">
+<body>
     <!-- Hi there -->
     <div class="hi-there">
         <br><br><br><br><br><br><br><br>
@@ -59,7 +60,7 @@
             <h2>Duino-JS, A JavaScript miner to mine Duino-Coin.</h2>
         </a>
         <a href="//bunkercoin.xyz">
-            <h2>Bunkercoin, a new, cryptocurrency!</h2>
+            <h2>Bunkercoin, a new cryptocurrency!</h2>
         </a>
         <a href="//github.com/sys-256/sys-256.github.io" target="_blank" rel="noopener noreferrer">
             <h2>This website.</h2>
@@ -72,7 +73,7 @@
     </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <!-- Contact -->
-    <div class="contact" id="contact" onmouseover="makeActualVisit()">
+    <div class="contact" id="contact">
         <h1 class="contact-contact-text">Contact</h1>
         <a href="//discord.com/users/832540286923177994/" target="_blank" rel="noopener noreferrer">
             <h2><abbr title="Opens in a new tab." style="text-decoration: none;">Discord: Hoiboy19#0920</abbr></h2>
@@ -96,16 +97,11 @@
                 rel="noopener noreferrer" style="color: white;"><abbr title="Opens in a new tab."
                     style="text-decoration: none;">You can improve
                     this website on Github.</abbr></a></h3>
-        <h4 style="margin-top: -1rem;">This website is powered by <a href="https://freenom.com" target="_blank"
-                rel="noopener noreferrer" style="color: white;"><abbr title="Opens in a new tab."
-                    style="text-decoration: none;">Freenom</abbr></a> and <a href="https://cloudflare.com"
-                target="_blank" rel="noopener noreferrer" style="color: white;"><abbr title="Opens in a new tab."
-                    style="text-decoration: none;">Cloudflare</abbr></a></h4>
     </div>
 
     <script>
         // Prevent using http by redirecting to https
-        if (location.protocol == "http:") location.replace("https://sys-256.me/");
+        if (location.protocol === "http:") location.replace("https://sys-256.me/");
     </script>
 </body>
 
