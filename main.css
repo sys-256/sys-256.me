@@ -151,6 +151,11 @@ body {
     color: white;
 }
 
+/* Remove underline on abbr tags */
+abbr {
+    text-decoration: none;
+}
+
 /* Link customization */
 a:link, a:visited {
     color: black;
