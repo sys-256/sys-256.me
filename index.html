@@ -132,7 +132,7 @@
 
     <script>
         // Prevent using http by redirecting to https
-        if (location.protocol === "http:") location.replace("https://sys-256.me/");
+        if (location.protocol === "http:" && !location.hostname.endsWith(".onion")) location.replace("https://sys-256.me/");
     </script>
 </body>
 
