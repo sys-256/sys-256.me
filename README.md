@@ -1,5 +1,2 @@
 # sys-256.me
-You can find the source code of my website here. It's hosted on my Raspberry Pi 4B.
-
-## License
-Check [the license file](LICENSE)
+The source code of my website, located at https://sys-256.me.

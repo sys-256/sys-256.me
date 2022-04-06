@@ -9,13 +9,19 @@
     <meta name="referrer" content="no-referrer">
 
     <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" sizes="any" href="/favicon.svg">
     <link rel="icon" type="image/png" sizes="256x256" href="/favicon.png">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="main.css">
-    <link crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==">
+    <link rel="stylesheet" href="main.css"
+        integrity="sha512-uPULYt0Uqycbh0Nc9p4Di7jS1jZ2NNFoyWvsRoY6u1AH7xmKfHzBB0NT/zJznwdc0rOUoVk0l7RUdoEHrhSekA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="twemoji.css"
+        integrity="sha512-GBn1kOL4sw+sfNNVgTxKk3iarK24gGBpZ5nQgSnkHz2M9Pv+KZTyi0IJuOxOtNowy4wzgrOkk9IYLWB5ewQlyg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- SEO -->
     <title>sys-256 | Bram</title>
@@ -32,8 +38,6 @@
     <meta property="og:site_name" content="sys-256.me">
 
     <!-- Twitter -->
-    <meta name="twitter:site" content="@sys256">
-    <meta name="twitter:creator" content="@sys256">
     <meta name="twitter:title" content="sys-256 | Bram">
     <meta name="twitter:description"
         content="Hi there! Click the link above to view my website, my projects or contact me!">
@@ -42,98 +46,57 @@
 </head>
 
 <body>
-    <!-- Hi there -->
-    <div class="hi-there">
-        <br><br><br><br>
-        <h1><span class="hi-there-hi">Hi there!</span></h1>
-        <br>
-        <h2 class="hi-there-text">
-            Welcome to my website!
-            <br>
-            I am Bram, online known as sys-256. I usually code in JavaScript (both browser and Node.js), <br>sometimes
-            Python and I like SQL.
-            <br><br>
-            I wanted to have a portofolio, and learn to use CSS even better, so I made this website.
-            <br>
-            You can find my growing list of projects here, or contact me.<br><br><br><br><br><br><br>
-            <a href="#projects">
-                <abbr title="Scroll to my projects.">
-                    <div class="scroll-down"></div>
-                </abbr>
+    <div class="main">
+        <div class="hi-there">
+            <h1><span class="hi-there-hi">Hi there!</span></h1>
+            <h3 class="hi-there-text">
+                Hey, welcome to my website! I'm Bram, online usually known as sys-256 or Hoiboy19. I like coding in
+                TypeScript/JavaScript, Python, and a bit of C/C++ sometimes.
+                My passion is coding (semi-)full stack applications, especially with SQL powered databases.<br><br>
+                As I wanted to have a nice-looking portofolio, and a place to show ways to contact me, I decided to
+                create this website.
+            </h3>
+        </div>
+        <div class="projects">
+            <h1>Projects</h1>
+            <a href="//github.com/sys-256/Duino-JS" target="_blank" rel="noopener noreferrer">
+                <h3>Duino-JS, a JavaScript miner to mine Duino-Coin.</h3>
             </a>
-        </h2>
-        <br>
-    </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <!-- Projects -->
-    <div class="projects" id="projects">
-        <h1 class="projects-projects-text">Projects</h1>
-        <a href="//github.com/sys-256/Duino-JS" target="_blank" rel="noopener noreferrer">
-            <h2>Duino-JS, A JavaScript miner to mine Duino-Coin.</h2>
-        </a>
-        <a href="//bunkercoin.xyz">
-            <h2>Bunkercoin, a new cryptocurrency!</h2>
-        </a>
-        <a href="//github.com/sys-256/sys-256.me" target="_blank" rel="noopener noreferrer">
-            <h2>This website.</h2>
-        </a>
-        <h2>project 4</h2>
-        <h2>project 5</h2>
-    </div>
-    <div class="projects-image">
-        <img src="projects.webp" alt="Projects" class="projects-image-image" width="40%" height="100%">
-    </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <!-- Contact -->
-    <div class="contact" id="contact">
-        <h1 class="contact-contact-text">Contact</h1>
-
-        <h2><i class="fa-brands fa-discord"></i>
-            <abbr title="Opens in a new tab.">
+            <a href="//github.com/sys-256/sys-256.me" target="_blank" rel="noopener noreferrer">
+                <h3>sys-256.me, this website!</h3>
+            </a>
+            <a href="//github.com/bunkercoin/bunkercoin" target="_blank" rel="noopener noreferrer">
+                <h3>Bunkercoin Core, a new cryptocurrency!</h3>
+            </a>
+            <a href="//github.com/bunkercoin/faucet" target="_blank" rel="noopener noreferrer">
+                <h3>Bunkercoin Faucet, the official Bunkercoin faucet.</h3>
+            </a>
+        </div>
+        <div class="contact">
+            <h1>Contact</h1>
+            <h2>
+                <i class="fa-brands fa-discord"></i>
                 <a href="//discord.com/users/832540286923177994/" target="_blank" rel="noopener noreferrer">
                     Discord: Hoiboy19#0920
                 </a>
-            </abbr>
-        </h2>
-        <h2><i class="fa-brands fa-twitter"></i>
-            <abbr title="Opens in a new tab.">
-                <a href="//twitter.com/sys256wastaken/" target="_blank" rel="noopener noreferrer">
-                    Twitter: @sys256wastaken
-                </a>
-            </abbr>
-        </h2>
-        <h2><i class="fa-brands fa-github"></i>
-            <abbr title="Opens in a new tab">
+                <br><br>
+                <i class="fa-brands fa-github"></i>
                 <a href="//github.com/sys-256/" target="_blank" rel="noopener noreferrer">
                     GitHub: sys-256
                 </a>
-            </abbr>
-        </h2>
-        <h2><i class="fa-brands fa-steam"></i>
-            <abbr title="Opens in a new tab">
+                <br><br>
+                <i class="fa-brands fa-steam"></i>
                 <a href="//steamcommunity.com/id/sys-256/" target="_blank" rel="noopener noreferrer">
                     Steam: sys-256
                 </a>
-            </abbr>
-        </h2>
-    </div>
-    <div class="contact-image">
-        <img src="contact.webp" alt="Contact" class="contact-image-image" width="40%" height="100%">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <!-- Footer -->
-    <div class="footer">
-        <h2>&copy; sys-256 (Bram) - 2021-2022</h2>
-        <h3>Handmade with ❤ by me, no frameworks were used. <a href="//github.com/sys-256/sys-256.me" target="_blank"
-                rel="noopener noreferrer" style="color: white;"><abbr title="Opens in a new tab.">You can improve
-                    this website on GitHub.</abbr></a></h3>
-    </div>
-
-    <script>
-        // Prevent using http by redirecting to https
-        if (location.protocol === "http:" && !location.hostname.endsWith(".onion")) location.replace("https://sys-256.me/");
-    </script>
+            </h2>
+        </div>
+    </div><br>
+    <footer>
+        <h3>© sys-256 (Bram) - 2021-2022</h3>
+        <h4>Handmade with <i class="twemoji twemoji-sparkling-heart"></i> at <i
+                class="twemoji twemoji-house-with-garden"></i> by me, no frameworks were used.</h4>
+    </footer>
 </body>
 
 </html>
