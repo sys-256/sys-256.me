@@ -27,21 +27,23 @@ body {
     margin-top: 5%;
 
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, max-content);
+    grid-template-rows: repeat(3, max-content);
     grid-template-areas:
         "hi-there hi-there"
-        "projects contact";
+        "projects contact"
+        "footer footer";
 }
 
 /* Mobile responsiveness by changing the grid layout */
 @media screen and (max-width: 1076px) {
     .main {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, max-content);
+        grid-template-rows: repeat(4, max-content);
         grid-template-areas:
             "hi-there"
             "projects"
-            "contact";
+            "contact"
+            "footer";
     }
 }
 
@@ -118,6 +120,7 @@ h1 {
 
 /* Footer styling */
 footer {
+    grid-area: footer;
     text-align: center;
     padding-top: .25%;
     padding-bottom: .25%;
