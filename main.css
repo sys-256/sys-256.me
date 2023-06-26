@@ -1,9 +1,6 @@
 /* Import JetBrains Mono */
 @font-face {
 	font-family: "JetBrains Mono";
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
 	src: url("https://fonts.bunny.net/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2") format("woff2");
 }
 
