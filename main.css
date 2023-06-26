@@ -1,192 +1,192 @@
 /* Import JetBrains Mono */
 @font-face {
-    font-family: "JetBrains Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url("https://fonts.gstatic.com/s/jetbrainsmono/v11/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOV.woff2") format("woff2");
+	font-family: "JetBrains Mono";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("https://fonts.gstatic.com/s/jetbrainsmono/v11/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOV.woff2") format("woff2");
 }
 
 /* Set background gradient and the font */
 body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 6000% 6000%;
-    animation: background-gradient 10s ease infinite;
-    font-family: "JetBrains Mono", sans-serif;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 6000% 6000%;
+	animation: background-gradient 10s ease infinite;
+	font-family: "JetBrains Mono", sans-serif;
 }
 
 /* Set the main grid settings, width + height and margins */
 .main {
-    display: grid;
-    grid-auto-columns: 1fr;
-    gap: 20px 20px;
+	display: grid;
+	grid-auto-columns: 1fr;
+	gap: 20px 20px;
 
-    width: 80%;
-    height: 90%;
-    margin-left: 10%;
-    margin-top: 5%;
+	width: 80%;
+	height: 90%;
+	margin-left: 10%;
+	margin-top: 5%;
 
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, max-content);
-    grid-template-areas:
-        "hi-there hi-there"
-        "projects contact"
-        "footer footer";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(3, max-content);
+	grid-template-areas:
+		"hi-there hi-there"
+		"projects contact"
+		"footer footer";
 }
 
 /* Mobile responsiveness by changing the grid layout */
 @media screen and (max-width: 1076px) {
-    .main {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, max-content);
-        grid-template-areas:
-            "hi-there"
-            "projects"
-            "contact"
-            "footer";
-    }
+	.main {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(4, max-content);
+		grid-template-areas:
+			"hi-there"
+			"projects"
+			"contact"
+			"footer";
+	}
 }
 
 /* Set font size and text alignment for grid template headers */
 h1 {
-    font-size: clamp(1rem, 3vw + 1rem);
-    text-align: center;
+	font-size: clamp(1rem, 3vw + 1rem);
+	text-align: center;
 }
 
 /* Hi there div styling */
 .hi-there {
-    grid-area: hi-there;
-    background-color: hsla(0, 0%, 77%, 0.6);
-    border-radius: 15px;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+	grid-area: hi-there;
+	background-color: hsla(0, 0%, 77%, 0.6);
+	border-radius: 15px;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
 }
 
 /* "Hi there" text styling and animations */
 .hi-there-hi {
-    font-size: clamp(1rem, 3vw + 1rem, 4rem);
-    position: relative;
-    width: max-content;
+	font-size: clamp(1rem, 3vw + 1rem, 4rem);
+	position: relative;
+	width: max-content;
 }
 
 .hi-there-hi::before,
 .hi-there-hi::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 .hi-there-hi::before {
-    background: hsla(0, 0%, 77%, 0.6);
-    animation: typewriter 1.4s steps(9) 1s forwards;
+	background: hsla(0, 0%, 77%, 0.6);
+	animation: typewriter 1.4s steps(9) 1s forwards;
 }
 
 .hi-there-hi::after {
-    width: .125em;
-    background: hsl(0, 0%, 0%);
-    animation: typewriter 1.4s steps(9) 1s forwards, blink 1s infinite;
+	width: .125em;
+	background: hsl(0, 0%, 0%);
+	animation: typewriter 1.4s steps(9) 1s forwards, blink 1s infinite;
 }
 
 /* Hi there description styling and animations */
 .hi-there-text {
-    text-align: left;
-    font-size: clamp(1rem, 3vw + 1rem);
-    color: hsla(0, 0%, 0%, 0.7);
-    opacity: 0;
-    transform: translateY(3rem);
-    animation: fadeInUp 2s ease calc(2.4s) forwards;
+	text-align: left;
+	font-size: clamp(1rem, 3vw + 1rem);
+	color: hsla(0, 0%, 0%, 0.7);
+	opacity: 0;
+	transform: translateY(3rem);
+	animation: fadeInUp 2s ease calc(2.4s) forwards;
 }
 
 /* Projects and contact div styling */
 .projects {
-    grid-area: projects;
+	grid-area: projects;
 }
 
 .contact {
-    grid-area: contact;
+	grid-area: contact;
 }
 
 .projects,
 .contact {
-    text-align: left;
-    background-color: hsla(0, 0%, 77%, 0.6);
-    border-radius: 15px;
-    padding-left: 5%;
-    padding-right: 5%;
+	text-align: left;
+	background-color: hsla(0, 0%, 77%, 0.6);
+	border-radius: 15px;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 /* Footer styling */
 footer {
-    grid-area: footer;
-    text-align: center;
-    padding-top: .25%;
-    padding-bottom: .25%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    width: 60%;
-    margin-left: 20%;
-    border-radius: 15px;
-    background-color: hsl(0, 35%, 5%);
-    color: white;
+	grid-area: footer;
+	text-align: center;
+	padding-top: .25%;
+	padding-bottom: .25%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	width: 60%;
+	margin-left: 20%;
+	border-radius: 15px;
+	background-color: hsl(0, 35%, 5%);
+	color: white;
 }
 
 /* Place the bottom text closer to the top text of the footer */
 footer h4 {
-    margin-top: -.3%;
+	margin-top: -.3%;
 }
 
 /* Link customization */
 a:link,
 a:visited {
-    color: hsl(0, 0%, 0%);
-    text-decoration: none;
+	color: hsl(0, 0%, 0%);
+	text-decoration: none;
 }
 
 a:hover,
 a:active {
-    color: hsl(0, 0%, 0%);
-    text-decoration: underline;
+	color: hsl(0, 0%, 0%);
+	text-decoration: underline;
 }
 
 /* Change selection colors */
 ::selection {
-    color: hsl(0, 0%, 0%);
-    background-color: white;
+	color: hsl(0, 0%, 0%);
+	background-color: white;
 }
 
 /* Animation definitions */
 @keyframes background-gradient {
-    0% {
-        background-position: 0% 50%;
-    }
+	0% {
+		background-position: 0% 50%;
+	}
 
-    50% {
-        background-position: 100% 50%;
-    }
+	50% {
+		background-position: 100% 50%;
+	}
 
-    100% {
-        background-position: 0% 50%;
-    }
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @keyframes typewriter {
-    to {
-        left: 100%;
-    }
+	to {
+		left: 100%;
+	}
 }
 
 @keyframes blink {
-    to {
-        background-color: transparent;
-    }
+	to {
+		background-color: transparent;
+	}
 }
 
 @keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
